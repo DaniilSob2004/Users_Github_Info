@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    font-family: Cambria;
+    font-size: 0.92em;
+    margin: 15px;
+}
+hr {
+    border: 1px solid #E2E3E4;
+}
+.title-text {
+    font-weight: bold;
+    color: #434755;
+    margin-right: 7px;
+}
+.disabled-link {
+    color: black;
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+#userAvatar {
+    width: 175px;
+    height: 175px;
+}
+
+
+.container {
+    background-color: #F7F6F5;
+    padding: 20px;
+    margin: 0 auto;
+    width: 750px;
+    min-width: 500px;
+}
+
+.search-block {
+    display: flex;
+    padding: 8px;
+}
+.search-block input {
+    background-color: #F7F6F5;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    padding: 10px 0;
+}
+.first-info-block {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 10px;
+}
+.first-info-block .info-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 17px;
+}
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E2E3E4;
+    padding: 15px 0;
+}
+.second-info-block {
+    flex: 1;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 550px) {
+    main {
+        flex-direction: column;
+    }
+    .container {
+        min-width: 250px;
+    }
+    .first-info-block {
+        width: 100%;
+    }
+    #userAvatar {
+        margin: 0 auto;
+    }
+}
